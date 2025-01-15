@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.App {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 95%; /* Wider container */
+    max-width: 1200px; /* Much larger max width */
+    margin: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.to-do-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.to-do-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.to-do-container ul li {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.to-do-container ul li:hover {
+    background-color: #e1e1e1;
+    cursor: pointer;
+}
+
+.to-do-container ul li.done {
+    text-decoration: line-through;
+    color: #888;
+    cursor: pointer;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.delete {
+    cursor: pointer;
+    color: #ff4d4d;
+    font-size: 24px;
+    transition: color 0.3s ease;
+    margin-left: 20px;
+}
+
+.delete:hover {
+    color: #cc0000;
+}
+
+.search {
+    width: 100%;
+    padding: 16px;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    font-size: 18px;
+    margin-bottom: 25px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.search:focus {
+    border-color: #007bff;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 12px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
